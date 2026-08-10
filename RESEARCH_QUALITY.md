@@ -4,7 +4,7 @@ This repository has been upgraded with a compact research-quality layer: referen
 
 ## Scope
 
-galaxy-clustering-correlation-lab upgraded with reproducibility metadata and validation.
+Private galaxy-clustering correlation lab with BAO-scale modelling and reference anchors.
 
 ## Equations And Models
 

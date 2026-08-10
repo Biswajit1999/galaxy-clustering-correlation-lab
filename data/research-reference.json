@@ -1,6 +1,6 @@
 {
   "title": "galaxy clustering correlation lab",
-  "description": "galaxy-clustering-correlation-lab upgraded with reproducibility metadata and validation.",
+  "description": "Private galaxy-clustering correlation lab with BAO-scale modelling and reference anchors.",
   "equations": [
     "Repository metadata completeness",
     "Reference-data finite anchor validation",
