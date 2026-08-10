@@ -1,0 +1,33 @@
+{
+  "dataset": "SDSS/BOSS-like correlation-function anchors",
+  "source": "Representative xi(r) anchors showing power-law clustering and the baryon-acoustic feature.",
+  "citation": "Eisenstein, D.J. et al., 2005. Detection of the baryon acoustic peak in the large-scale correlation function of SDSS luminous red galaxies. The Astrophysical Journal, 633(2), pp.560-574.",
+  "x_label": "Separation r [Mpc/h]",
+  "y_label": "xi(r)",
+  "points": [
+    {
+      "x": 1,
+      "y": 18,
+      "label": "one-halo scale"
+    },
+    {
+      "x": 5,
+      "y": 1.05,
+      "label": "correlation length"
+    },
+    {
+      "x": 20,
+      "y": 0.06,
+      "label": "two-halo scale"
+    },
+    {
+      "x": 105,
+      "y": 0.018,
+      "label": "BAO bump"
+    }
+  ],
+  "requiredCitations": [
+    "Peebles, P.J.E., 1980. The large-scale structure of the universe. Princeton University Press.",
+    "Eisenstein, D.J. et al., 2005. Detection of the baryon acoustic peak in the large-scale correlation function of SDSS luminous red galaxies. The Astrophysical Journal, 633(2), pp.560-574."
+  ]
+}
