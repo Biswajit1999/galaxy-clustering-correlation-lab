@@ -72,7 +72,13 @@ real survey catalogs. It has two layers that are shown together:
 1. **Reference anchors** (`data/reference.json`): four representative xi(r) data points --
    one-halo scale, correlation length, two-halo scale and the BAO bump -- labelled and plotted
    as fixed markers so the model curve can be visually compared against literature-motivated
-   benchmarks (citing Eisenstein et al. 2005).
+   benchmarks (citing Eisenstein et al. 2005). These are order-of-magnitude landmarks
+   reflecting the shape reported in SDSS/BOSS clustering papers, not digitized values from a
+   specific published table -- stated explicitly in the reference metadata rather than implied
+   as an exact reproduction. **The main plot uses log-log axes**, the standard presentation for
+   a correlation function that spans two-and-a-half decades in separation and several decades
+   in amplitude; a linear-axis plot of `xi(r)` compresses the entire interesting structure
+   (including the BAO bump) into a sliver near the origin.
 2. **Adjustable model** (`physicsWorker.js`, `clustering()` function): given the current slider
    parameters, a Web Worker evaluates
 

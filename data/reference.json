@@ -1,6 +1,6 @@
 {
   "dataset": "SDSS/BOSS-like correlation-function anchors",
-  "source": "Representative xi(r) anchors showing power-law clustering and the baryon-acoustic feature.",
+  "source": "Illustrative xi(r) anchor points showing the canonical power-law clustering regime and the BAO bump near the sound-horizon scale (~150 Mpc comoving, ~105 Mpc/h). These are representative order-of-magnitude landmarks reflecting the shape reported in SDSS/BOSS clustering papers, not digitized values from a specific published table.",
   "citation": "Eisenstein, D.J. et al., 2005. Detection of the baryon acoustic peak in the large-scale correlation function of SDSS luminous red galaxies. The Astrophysical Journal, 633(2), pp.560-574.",
   "x_label": "Separation r [Mpc/h]",
   "y_label": "xi(r)",
