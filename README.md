@@ -41,3 +41,7 @@ Representative xi(r) anchors showing power-law clustering and the baryon-acousti
 
 - Peebles, P.J.E., 1980. The large-scale structure of the universe. Princeton University Press.
 - Eisenstein, D.J. et al., 2005. Detection of the baryon acoustic peak in the large-scale correlation function of SDSS luminous red galaxies. The Astrophysical Journal, 633(2), pp.560-574.
+
+## Research Quality Upgrade
+
+See [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md) for the validation layer, reference anchors, equations and research boundaries added to this repository.
