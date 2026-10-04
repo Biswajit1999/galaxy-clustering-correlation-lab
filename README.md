@@ -125,8 +125,7 @@ npm run check
 
 `scripts/validate.js` checks that required files exist, that `data/reference.json` is well
 formed, that `physicsWorker.js` parses, that citations are present, and that no unfinished
-scaffold tokens remain. `scripts/validate_repository.mjs` performs the extended
-research-quality checks described in [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md), validating
+scaffold tokens remain. `scripts/validate_repository.mjs` validates
 `data/research-reference.json` and the optional `research-overlay.js` mission-control panel.
 
 ## Math Appendix
@@ -169,7 +168,7 @@ size of this feature across redshift constrains D_A(z) and H(z) in the assumed c
 - `data/research-reference.json`: extended benchmark anchors for the validation layer.
 - `research-overlay.js`: optional mission-control quality panel (validation status, telemetry).
 - `scripts/validate.js`: no-dependency repository validation.
-- `scripts/validate_repository.mjs`: extended research-quality validation.
+- `scripts/validate_repository.mjs`: extended benchmark-reference validation.
 
 ## References
 
@@ -196,8 +195,3 @@ mild disagreement between BAO/CMB-based `H0` values (`~67-71`) and local distanc
 (`~73`) is the actively debated **Hubble tension**. This lab's `bao_implied_H0` sits in exactly
 that BAO/CMB-consistent range, which is a genuine (if simplified) illustration of why BAO
 surveys are treated as trustworthy `H0` evidence rather than a supporting detail.
-
-## Research Quality Upgrade
-
-See [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md) for the validation layer, reference anchors,
-equations and research boundaries added to this repository.
