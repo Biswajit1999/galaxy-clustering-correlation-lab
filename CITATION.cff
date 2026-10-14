@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this research software, please cite it using this metadata."
+title: "Galaxy Clustering Correlation Lab"
+abstract: "Reproducible galaxy clustering correlation functions laboratory for simulation, scientific visualization, parameter exploration and quantitative analysis. Uses reproducible numerical experiments, parameter exploration an"
+type: software
+authors:
+  - family-names: Jana
+    given-names: Biswajit
+repository-code: "https://github.com/Biswajit1999/galaxy-clustering-correlation-lab"
+url: "https://biswajit1999.github.io/galaxy-clustering-correlation-lab/"
+keywords:
+  - "astronomy"
+  - "astrophysics"
+  - "scientific computing"
+  - "galaxies"
+  - "large-scale structure"
+  - "observational astronomy"
