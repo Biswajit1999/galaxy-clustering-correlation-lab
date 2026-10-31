@@ -179,19 +179,17 @@ size of this feature across redshift constrains D_A(z) and H(z) in the assumed c
 - Wilson, G. et al., 2017. Good enough practices in scientific computing. PLOS Computational
   Biology, 13(6), p.e1005510.
 
-## What the BAO Bump Actually Tells Us: An Independent H0
+## BAO ruler conversion is conditional, not an H0 measurement
 
-The `bao_implied_H0` metric turns the BAO bump from a decorative wiggle into what it actually
-is in real cosmology: a **standard ruler**. Its comoving position is fixed by the sound horizon
-at the drag epoch, `r_d = 147.09 Mpc` (a physical length set by early-universe baryon-photon
-acoustic physics, measured precisely by Planck 2018 CMB data). Observing that same physical
-ruler appear at `105 Mpc/h` on the correlation-function x-axis means `h = 105 / 147.09 ~ 0.714`,
-i.e. `H0 ~ 71.4 km/s/Mpc` -- computed independently of both the CMB and the local (Cepheid/SNe)
-distance ladder.
+The browser's `bao_implied_H0` number is an **illustrative algebraic conversion**:
+`H0 = 100 × r_peak[h⁻¹ Mpc] / r_d[Mpc]`. For the hard-coded model centre
+`r_peak = 105 Mpc/h` and an **externally assumed** physical sound horizon
+`r_d = 147.09 Mpc`, this produces 71.4 km/s/Mpc by construction.
 
-This is literally how real galaxy-survey BAO measurements (SDSS, BOSS, eBOSS, and now DESI)
-provide one of the three independent `H0` routes cosmologists compare against each other; the
-mild disagreement between BAO/CMB-based `H0` values (`~67-71`) and local distance-ladder values
-(`~73`) is the actively debated **Hubble tension**. This lab's `bao_implied_H0` sits in exactly
-that BAO/CMB-consistent range, which is a genuine (if simplified) illustration of why BAO
-surveys are treated as trustworthy `H0` evidence rather than a supporting detail.
+It is **not** an independent determination of the Hubble constant. No survey
+catalogue, BAO dilation measurement, fiducial distance conversion, survey
+window function, calibrated covariance, or sound-horizon inference is performed.
+Real BAO analyses constrain distance-to-ruler ratios (e.g. `D_M(z)/r_d` and
+`D_H(z)/r_d`) and require additional assumptions or data to infer `H0`.
+The conditional nature of this example is examined explicitly in
+[`docs/BAO_ROBUSTNESS.md`](docs/BAO_ROBUSTNESS.md).
