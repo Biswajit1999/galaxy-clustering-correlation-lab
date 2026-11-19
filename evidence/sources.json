@@ -1,0 +1,21 @@
+{
+  "project": "Galaxy Clustering Correlation Lab",
+  "repository": "https://github.com/Biswajit1999/galaxy-clustering-correlation-lab",
+  "files": [
+    {
+      "label": "Reference",
+      "path": "data/reference.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Research reference",
+      "path": "data/research-reference.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "METHODS",
+      "path": "research/2026-11-17/METHODS.md",
+      "role": "Data and provenance"
+    }
+  ]
+}
