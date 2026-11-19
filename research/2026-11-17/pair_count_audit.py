@@ -38,6 +38,6 @@ def covariance_spectrum(replicates):
     """Return eigenvalues, numerical rank, and condition of regional covariance."""
     c = jackknife_covariance(replicates)
     eig = np.linalg.eigvalsh(c)
-    return {"covariance": c, "eigenvalues": eig,
-            "rank": int(np.linalg.matrix_rank(c)),
-            "condition": float(np.inf if eig[0] <= 0 else eig[-1]/eig[0])}
+    rank = int(np.linalg.matrix_rank(c, hermitian=True))
+    condition = np.inf if rank < c.shape[0] or eig[0] <= 0 else eig[-1] / eig[0]
+    return {"covariance": c, "eigenvalues": eig, "rank": rank, "condition": float(condition)}

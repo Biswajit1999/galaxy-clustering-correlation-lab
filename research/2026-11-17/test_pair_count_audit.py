@@ -17,8 +17,16 @@ def test_jackknife_covariance():
     assert np.allclose(jackknife_covariance(x), [[4/3, 8/3], [8/3, 16/3]])
 
 def test_rank_deficiency():
-    x = np.array([[1., 2.], [2., 4.], [3., 6.]])
-    assert covariance_spectrum(x)["rank"] == 1
+    x = np.array([[1., 11.], [2., 22.], [2., 22.]])
+    spectrum = covariance_spectrum(x)
+    assert spectrum["rank"] == 1
+    assert np.isinf(spectrum["condition"])
+
+def test_full_rank_condition():
+    x = np.array([[-2., 0.], [2., 0.], [0., -1.], [0., 1.]])
+    spectrum = covariance_spectrum(x)
+    assert spectrum["rank"] == 2
+    assert spectrum["condition"] == pytest.approx(4)
 
 def test_invalid_counts():
     with pytest.raises(ValueError):
