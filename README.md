@@ -179,19 +179,8 @@ size of this feature across redshift constrains D_A(z) and H(z) in the assumed c
 - Wilson, G. et al., 2017. Good enough practices in scientific computing. PLOS Computational
   Biology, 13(6), p.e1005510.
 
-## What the BAO Bump Actually Tells Us: An Independent H0
+## Where the BAO feature comes from
 
-The `bao_implied_H0` metric turns the BAO bump from a decorative wiggle into what it actually
-is in real cosmology: a **standard ruler**. Its comoving position is fixed by the sound horizon
-at the drag epoch, `r_d = 147.09 Mpc` (a physical length set by early-universe baryon-photon
-acoustic physics, measured precisely by Planck 2018 CMB data). Observing that same physical
-ruler appear at `105 Mpc/h` on the correlation-function x-axis means `h = 105 / 147.09 ~ 0.714`,
-i.e. `H0 ~ 71.4 km/s/Mpc` -- computed independently of both the CMB and the local (Cepheid/SNe)
-distance ladder.
+The browser model places the centre of its Gaussian BAO term at **105 h⁻¹ Mpc**. The sliders change the model and the displayed correlation curve. Estimating a cosmological distance from real BAO data requires a galaxy sample, an analysis of the survey selection, a fitted distance scale and its covariance. See [the illustrative reference anchors](data/reference.json) for the values used here.
 
-This is literally how real galaxy-survey BAO measurements (SDSS, BOSS, eBOSS, and now DESI)
-provide one of the three independent `H0` routes cosmologists compare against each other; the
-mild disagreement between BAO/CMB-based `H0` values (`~67-71`) and local distance-ladder values
-(`~73`) is the actively debated **Hubble tension**. This lab's `bao_implied_H0` sits in exactly
-that BAO/CMB-consistent range, which is a genuine (if simplified) illustration of why BAO
-surveys are treated as trustworthy `H0` evidence rather than a supporting detail.
+The [pair-count and jackknife methods](research/2026-11-17/METHODS.md) show how to combine already-normalised pair counts and assess covariance rank with synthetic examples. Run `python -m pytest -q research/2026-11-17/test_pair_count_audit.py` to reproduce the checks.
