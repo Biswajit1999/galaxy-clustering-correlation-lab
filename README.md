@@ -184,3 +184,15 @@ size of this feature across redshift constrains D_A(z) and H(z) in the assumed c
 The browser model places the centre of its Gaussian BAO term at **105 h⁻¹ Mpc**. The sliders change the model and the displayed correlation curve. Estimating a cosmological distance from real BAO data requires a galaxy sample, an analysis of the survey selection, a fitted distance scale and its covariance. See [the illustrative reference anchors](data/reference.json) for the values used here.
 
 The [pair-count and jackknife methods](research/2026-11-17/METHODS.md) show how to combine already-normalised pair counts and assess covariance rank with synthetic examples. Run `python -m pytest -q research/2026-11-17/test_pair_count_audit.py` to reproduce the checks.
+
+## Research evidence and downloads
+
+- [Browse the evidence file index](evidence/manifest.json) or open `evidence.html` from the checkout to inspect previews and downloads.
+- Start with [Reference](data/reference.json), [Research reference](data/research-reference.json), [METHODS](research/2026-11-17/METHODS.md).
+
+Run these commands from the repository root to rebuild the published evidence.
+
+```sh
+python scripts/evidence_catalog.py
+python scripts/render_evidence_page.py
+```
