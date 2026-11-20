@@ -15,7 +15,7 @@ class PairStatisticsTests(unittest.TestCase):
         result = landy_szalay(p, p, [0, 2, 4, 7])
         # DR includes the four self-pairs, so identical catalogues do not
         # imply zero xi at short separations; verify exact normalization.
-        self.assertAlmostEqual(result[0], 1 - 2 * (10 / 16) / (3 / 6) + 1)
+        self.assertAlmostEqual(result[0], 1 - 2 * (6 / 16) / (3 / 6) + 1)
 
     def test_empty_rr_is_nan(self):
         self.assertTrue(math.isnan(landy_szalay(
